@@ -11,7 +11,7 @@
         "tag-helper": ">= 0.0.11"
     },
     "main": "./form_helper.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Mark Huetsch <markhuetsch@gmail.com>",
     "license": "MIT"
 }
