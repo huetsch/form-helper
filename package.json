@@ -1,0 +1,17 @@
+{
+    "name": "form-helper",
+    "description": "Rails' FormHelper ported to Javascript",
+    "keywords": [
+        "rails",
+        "form-helper"
+    ],
+    "homepage": "https://github.com/huetsch/form-helper",
+    "dependencies": {
+        "cream": ">= 0.0.22",
+        "tag-helper": ">= 0.0.11"
+    },
+    "main": "./form_helper.js",
+    "version": "0.0.1",
+    "author": "Mark Huetsch <markhuetsch@gmail.com>",
+    "license": "MIT"
+}
