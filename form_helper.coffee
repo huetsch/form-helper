@@ -4,7 +4,16 @@ InstanceTag = require 'instance-tag'
 FormTagHelper = require 'form-tag-helper'
 
 class FormHelper
+  label: (object_name, method, content_or_options = null, options = null, block) =>
+    content_is_options = Object.isPlainObject(content_or_options)
+    if content_is_options or block
+      options = content_or_options if content_is_options
+      text = null
+    else
+      text = content_or_options
 
+    options ||= {}
+    InstanceTag.new(object_name, method, @, Object.delete(options,'object')).to_label_tag(text, options, block)
 
 InstanceTag::tag_name = ->
   "#{@object_name}[#{@sanitized_method_name()}]"
